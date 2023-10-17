@@ -9,12 +9,13 @@
 
 /* betty style doc for function main goes there */
 int main(void)
-        int i;
 {
-        for (i = 123; i > 97; i--)
-        {
-                putchar('123' + i);
-                putchar('\n');
-        }
-        return (0);
+	int i;
+
+	for (i = 123; i > 97; i--)
+	{
+		putchar(i);
+	
+	putchar('\n');
+	return (0);
 }
