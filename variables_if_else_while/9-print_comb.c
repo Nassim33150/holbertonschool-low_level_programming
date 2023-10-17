@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 /**
  * main - Entry point
  *
@@ -7,16 +10,17 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-        int i,
-	
-	for (i = 0; i < 9; i++)
-		if ( i < 9)
+	int i,
+
+	for (i = 0; i < 10; i++)
+	{
+		putchar(i + '0');
+		if (i < 9)
 		{
-			printf("%d ", i);
+			putchar(',');
+			putchar(' ');
 		}
-		else
-		{
-			printf("%d", i);
-		}
-		return (0);
+	}
+	putchar('\n');
+	return (0);
 }
