@@ -11,16 +11,16 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	int n;
+	int i;
 
-	for (i = 0; i < 9; i++)
+	for (i = 0; i < 10; i++)
 	{
-		putchar('0' + i);
+		putchar(i);
 	}
-	for (i = 97; i < 102; i++)
-	{	
-		putchar('97' + i);
-		putchar('\n');
+	for (i = 97; i < 103; i++)
+	{
+		putchar(i);
 	}
+	putchar('\n');
 	return (0);
 }
