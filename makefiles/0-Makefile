@@ -1,3 +1,5 @@
+all : school
+
 school : school.o main.o
 	gcc -o school school.o main.o
 
