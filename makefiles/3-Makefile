@@ -7,7 +7,7 @@ RM = rm -f
 all: $(OBJ)
 	$(CC) $(SRC) -o $(NAME)
 
-clean: $(RM) school *.swp *.swo *.swn
+clean: $(RM) *~ $(NAME)
 
 oclean: $(RM) $(OBJ)
 fclean: clean oclean
