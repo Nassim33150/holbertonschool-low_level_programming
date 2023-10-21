@@ -19,6 +19,6 @@ _putchar((number2 / 10) + '0');
 }
 _putchar((number2 % 10) + '0');
 }
-_putchar(number1);
+_putchar(10);
 }
 }
