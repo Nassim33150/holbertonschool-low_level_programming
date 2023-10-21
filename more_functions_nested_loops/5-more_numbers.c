@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
 *more_numbers - prints numbers to 14
 *
@@ -7,12 +6,19 @@
 */
 void more_numbers(void)
 {
-	int i;
+int number1, number2;
 
-	for (i = 0 ; i <= 14; i++)
+for (number1 = '0'; number1 < '9'; number1++)
 {
-	putchar('0' + i);
-}
-	putchar('\n');
-}
+for (number2 = 0; number2 <= 14; number2++)
 
+{
+if (number2 > 9)
+{
+_putchar((number2 / 10) + '0');
+}
+_putchar((number2 % 10) + '0');
+}
+_putchar(number1);
+}
+}
