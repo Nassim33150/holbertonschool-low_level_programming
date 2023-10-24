@@ -23,6 +23,6 @@ void rev_string(char *s)
 		hoolder = s[start];
 		s[start] = s[end];
 		s[end] = hoolder;
-		end --;
+		end--;
 	}
 }
