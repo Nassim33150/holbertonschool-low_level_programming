@@ -1,4 +1,4 @@
-#include "main.h"
+#iinclude "main.h"
 
 /**
  * *_strcpy - copies the string pointed to by src
