@@ -2,53 +2,23 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-
-    size_t i;
-    size_t j;
-    size_t x;
-    int middleIndex;
-    int index = -1;
-    int halfindex;
-
-    if (size <= 0 || array == NULL)
-    {
+    size_t left = 0;
+    size_t right = size - 1;
+    if (array == NULL || size == 0)
         return -1;
-    }
 
-    middleIndex = size / 2;
-    halfindex = (size / 2) - 1;
-
-    for (i = 0; i < size; i++)
+    while (left <= right)
     {
-        if (value == middleIndex)
-        {
-            index++;
-            return (index);
-        }
-        else if (value < middleIndex)
-        {
-            for (j = middleIndex; j > 0; j--)
-            {
+        size_t middle = left + (right - left) / 2;
 
-                if (value == array[j])
-                {
-                    halfindex--;
-                    return (index);
-                }
-            }
-        }
+        if (array[middle] == value)
+            return middle;
+
+        if (array[middle] < value)
+            left = middle + 1;
         else
-        {
-            for (x = middleIndex; x > size; x++)
-            {
-
-                if (value == array[x])
-                {
-                    halfindex++;
-                    return (index);
-                }
-            }
-        }
+            right = middle - 1;
     }
+
     return -1;
 }
